@@ -1,5 +1,5 @@
 /*
- * https://coolors.co/d0dfea-138bd6-303f47-29c673-15374c
+ * https://coolors.co/e8e8e8-bfbfbf-96939b-564256-fc814a
  */
 
 *, *::before, *::after {
@@ -20,12 +20,12 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
-    color: #303f47;
+    color: #564256;
     background-color: #fff;
 }
 
 a {
-    color: #138bd6;
+    color: #f06449;
     text-decoration: none;
 }
 
@@ -40,14 +40,14 @@ a:hover {
 
 .big {
     font-size: 36px;
-    color: #15374c;
+    color: #564256;
 }
 
 .still-big-but-a-little-smaller {
     font-size: 24px;
-    color: #777;
+    color: #96939b;
     padding-bottom: 20px;
-    border-bottom: 1px solid #d0dfea;
+    border-bottom: 1px solid #bfbfbf;
     margin-bottom: 20px;
 }
 
@@ -57,9 +57,9 @@ a:hover {
 
 .section-title {
     font-size: 24px;
-    color: #15374c;
+    color: #564256;
 }
 
 .section-body {
-    color: #777;
+    color: #96939b;
 }
