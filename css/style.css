@@ -1,5 +1,5 @@
 /*
- * https://coolors.co/e8e8e8-bfbfbf-96939b-564256-fc814a
+ * https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-cc0425
  */
 
 *, *::before, *::after {
@@ -10,56 +10,98 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+::selection {
+    background: rgba(0, 0, 0, 0.075);
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    color: #2b2d42;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #564256;
-    background-color: #fff;
 }
 
 a {
-    color: #f06449;
+    color: #ef233c;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #cc0425;
+    transition: color 150ms ease-in-out;
+}
+
+.icon {
+    fill: #ef233c;
+}
+
+.icon:hover {
+    fill: #cc0425;
+    transition: fill 150ms ease-in-out;
 }
 
 .container {
-    padding: 20px;
-    max-width: 600px;
+    padding: 80px;
 }
 
-.big {
-    font-size: 36px;
-    color: #564256;
-}
-
-.still-big-but-a-little-smaller {
-    font-size: 24px;
-    color: #96939b;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #bfbfbf;
+.heading {
+    font-size: 48px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
-.section:not(:last-child) {
+.icons {
     margin-bottom: 20px;
 }
 
-.section-title {
-    font-size: 24px;
-    color: #564256;
+.icon-list {
+    list-style: none;
 }
 
-.section-body {
-    color: #96939b;
+.icon-list-item {
+    display: inline;
+    position: relative;
+}
+
+.icon-list-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.icon-list-item:not(:last-child)::after {
+    content: "/";
+    color: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 45px;
+    bottom: 4px;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.body {
+    color: #8d99ae;
+}
+
+.body p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .container {
+        padding: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 40px;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
 }
