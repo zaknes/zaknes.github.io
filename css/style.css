@@ -62,19 +62,13 @@ a:hover {
 
 .icon-list-item {
     display: inline;
-    position: relative;
-}
-
-.icon-list-item:not(:last-child) {
-    margin-right: 45px;
 }
 
 .icon-list-item:not(:last-child)::after {
     content: "/";
     color: rgba(0, 0, 0, 0.15);
-    position: absolute;
-    left: 45px;
-    bottom: 4px;
+    margin: 0px 20px;
+    vertical-align: 20%;
 }
 
 .icon {
