@@ -1,12 +1,10 @@
 /*
- * https://coolors.co/2b2d42-8d99ae-edf2f4-ef233c-cc0425
+ * https://coolors.co/2b2d42-8d99ae-edf2f4-e3342f-cc0425
  */
 
 *, *::before, *::after {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -15,41 +13,40 @@
 }
 
 body {
-    font-size: 20px;
-    font-family: "Lato", sans-serif;
+    font-size: 1.125rem;
+    font-family: "Nunito Sans", sans-serif;
     line-height: 1.5;
-    color: #2b2d42;
+    color: #606f7b;
     font-weight: 400;
 }
 
 a {
-    color: #ef233c;
+    color: #e3342f;
     text-decoration: none;
 }
 
 a:hover {
-    color: #cc0425;
-    transition: color 150ms ease-in-out;
+    text-decoration: underline;
 }
 
 .icon {
-    fill: #ef233c;
+    fill: #e3342f;
 }
 
 .icon:hover {
-    fill: #cc0425;
-    transition: fill 150ms ease-in-out;
+    fill: #cc1f18;
 }
 
 .container {
     padding: 80px;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .heading {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
+    color: #22292f;
 }
 
 .icons {
@@ -76,14 +73,9 @@ a:hover {
     height: 25px;
 }
 
-.body {
-    color: #8d99ae;
-}
-
 .body p:not(:last-child) {
     margin-bottom: 20px;
 }
-
 
 @media screen and (max-width: 500px) {
     .container {
