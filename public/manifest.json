@@ -1,0 +1,18 @@
+{
+  "name": "Zak Nesler",
+  "short_name": "Zak Nesler",
+  "description": "Student full-stack web developer with a passion for tasteful and minimalistic design, as well as tidy and efficient back-end code.",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "browser",
+  "orientation": "any",
+  "theme_color": "#E3342F",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#FFFFFF"
+}

@@ -1,5 +1,5 @@
-let mix = require('laravel-mix');
-let tailwind = require('tailwindcss');
+const mix = require('laravel-mix');
+const tailwind = require('tailwindcss');
 require('laravel-mix-purgecss');
 
 mix.setPublicPath('public')
