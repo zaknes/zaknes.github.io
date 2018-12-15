@@ -1,0 +1,61 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+*::selection {
+    @apply .text-selection-text .bg-selection-bg;
+}
+
+.markup {
+    @apply .block .text-grey-darker .leading-normal .-mb-4;
+
+    > div, p, blockquote, pre, ul, ol {
+        @apply .mb-4;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply .font-bold .text-grey-darkest .mb-2;
+    }
+
+    h2 {
+        @apply .text-2xl;
+    }
+
+    h3 {
+        @apply .text-xl;
+    }
+
+    strong {
+        @apply .font-bold;
+    }
+
+    a {
+        @apply .no-underline .text-brand .shadow-link;
+        transition: box-shadow 50ms ease-in-out;
+
+        &:hover {
+            @apply .shadow-link-hover;
+            transition: box-shadow 50ms ease-in-out;
+        }
+    }
+
+    img {
+        @apply .w-full .h-auto;
+    }
+
+    blockquote {
+        @apply .border-l-2 .border-brand-light .bg-grey-lighter .p-6 .rounded-r;
+    }
+
+    pre {
+        @apply .block .text-sm .font-normal .p-12 .leading-loose .overflow-x-auto .bg-grey-lighter .text-grey-darker .font-mono;
+    }
+}
+
+@screen md {
+    .markdown {
+        pre {
+            @apply .rounded;
+        }
+    }
+}
