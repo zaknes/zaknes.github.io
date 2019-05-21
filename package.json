@@ -1,18 +1,19 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-    },
-    "devDependencies": {
-        "cross-env": "^5.2",
-        "laravel-mix": "^4.0",
-        "laravel-mix-purgecss": "^3.0",
-        "less": "^3.9",
-        "less-loader": "^4.1",
-        "tailwindcss": "^0.7",
-        "tailwindcss-gradients": "^1.1.0"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development postcss css/app.css -o public/css/app.css",
+    "prod": "cross-env NODE_ENV=production postcss css/app.css -o public/css/app.css",
+    "serve": "cross-env NODE_ENV=development concurrently \"postcss css/app.css -o public/css/app.css --watch\"  \"live-server ./public\""
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.2",
+    "concurrently": "^4.1",
+    "cross-env": "^5.2",
+    "cssnano": "^4.1",
+    "live-server": "^1.2",
+    "postcss-cli": "^6.1",
+    "tailwindcss-gradients": "^2.0",
+    "autoprefixer": "^9.5",
+    "tailwindcss": "^1.0"
+  }
 }
