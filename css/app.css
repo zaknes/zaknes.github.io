@@ -3,6 +3,23 @@
 /* purgecss end ignore */
 
 @tailwind components;
+
+.markup p:not(:last-child) {
+  @apply mb-4;
+}
+
+.markup a {
+  @apply text-gray-700 font-semibold;
+}
+
+.markup a:hover {
+  @apply text-black underline;
+}
+
+.markup strong {
+  @apply text-gray-700 font-semibold;
+}
+
 @tailwind utilities;
 
 *::selection {
